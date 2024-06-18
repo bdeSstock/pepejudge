@@ -1,5 +1,5 @@
 body {
-    --bg-color: var(--tg-theme-bg-color, #fff);
+    --bg-color: var(--tg-theme-bg-color, #2d2d2d);
     font-family: sans-serif;
     background-color: var(--bg-color);
     color: var(--tg-theme-text-color, #222);
@@ -21,6 +21,15 @@ a {
     font-size: 14px;
     padding: 10px 17px;
 }
+
+
+
+#main_btn {
+    
+    border-radius: 15px; /* Membuat sudut tombol tidak terlalu kotak */
+    
+}
+
 
 .btn-primary {
     background-color: var(--tg-theme-button-color, #50a8eb);
@@ -141,6 +150,33 @@ section {
     text-align: center;
     background-color: var(--bg-color, #ffffff);
 }
+
+#top_sect2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .main_btn2 {
+    padding: 2px 2px;
+    margin: 1px;
+    background-color: transparent; /* Menghapus warna latar belakang */
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Menambahkan gambar latar belakang */
+    background-image: url('../img/BTN.png');
+    background-size: cover; /* Menyesuaikan ukuran gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-position: center; /* Posisi gambar di tengah tombol */
+  }
+  
+  .main_btn2:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+    /* Efek transisi saat hover */
+    transition: background-color 0.3s ease;
+  }
+  
 
 section#top_sect {
     background-color: var(--tg-theme-bg-color, #ffffff);
